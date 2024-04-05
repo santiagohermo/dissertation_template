@@ -1,0 +1,280 @@
+\documentclass{report}
+
+%% Required packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,dsfont}
+
+%% Page layout
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+
+%% Graphics and figures
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+\usepackage{pdfpages}
+
+%% Tables and formatting
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{lscape}
+\usepackage[capposition=top]{floatrow}
+
+%% Colors and fonts
+\usepackage{xcolor}
+
+%% Table of contents and formatting
+\usepackage[nottoc,notlof,notlot]{tocbibind}
+\usepackage{titlesec}
+\usepackage[titles]{tocloft}
+\setlength{\cftbeforechapskip}{4pt}
+\renewcommand\cftfigafterpnum{\vskip1.5pt\par}
+\renewcommand\cfttabafterpnum{\vskip1.5pt\par}
+\cftsetindents{figure}{0em}{3.5em}
+\cftsetindents{table}{0em}{3.5em}
+
+%% Formatting for chapters, sections, and subsections
+
+\titleformat{\chapter}[display]{\normalfont\Large\bfseries\centering}{\chaptertitlename\ \thechapter}{10pt}{\Large} 
+\titlespacing*{\chapter}{0pt}{0pt}{35pt}
+\titlespacing*{\section}{0pt}{2.5ex}{2.5ex}
+\titlespacing*{\subsection}{0pt}{2.5ex}{2.5ex}
+\titlespacing*{\subsubsection}{0pt}{2.5ex}{1.5ex}
+
+\setcounter{secnumdepth}{3} % how many sectioning levels to assign numbers to
+
+
+%% URL and hyperlinks
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+    breaklinks = true,
+    citecolor = blue
+}
+\urlstyle{same}
+
+%% Enumeration
+
+\usepackage{enumerate}
+\usepackage[inline]{enumitem}
+
+%% Bibliography
+
+\usepackage[backend = biber,
+			maxnames = 10,
+			maxcitenames = 3,
+			maxbibnames = 10,
+			minbibnames = 1,
+			doi = false,
+			eprint = false,
+			style = apa
+			]{biblatex}
+\setlength\bibitemsep{1.25\itemsep}
+\addbibresource{biblio.bib}
+
+\setlength{\parskip}{.5em}%
+
+\graphicspath{{chapter_one/}{chapter_one/}{chapter_three/}}
+
+\renewcommand{\contentsname}{TABLE OF CONTENTS}
+\renewcommand{\listfigurename}{LIST OF FIGURES}
+\renewcommand{\listtablename}{LIST OF TABLES}
+\renewcommand{\chaptername}{CHAPTER}
+
+% Common Math-related commands
+%% More commands in main.tex for each chapter
+
+\newtheorem{assu}{Assumption}
+\newtheorem{prop}{Proposition}
+\newtheorem{definition}{Definition}
+
+\DeclareMathOperator{\Var}{\mathbb{Var}}
+\DeclareMathOperator{\Corr}{\mathbb{Corr}}
+\DeclareMathOperator{\Cov}{\mathbb{Cov}}
+\DeclareMathOperator{\E}{\mathbb{E}}
+
+\newcommand{\pre}{\text{Pre}}
+\newcommand{\post}{\text{Post}}
+
+%% University details
+\newcommand{\university}{University Name}
+\newcommand{\department}{Department of Something}
+
+%% BEGIN DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{0.5cm}
+        \linespread{1.3}
+        
+        \LARGE
+        \textbf{Triumph and Transformation: Messi's Journey in Club and International Football}
+        
+        \vspace{2.5cm}
+        
+        \normalsize
+        By
+        
+        \vspace{1cm}
+        \large Author Name \\
+        \vspace{0.25cm}
+        \normalsize
+        B.A., Universidad de Rosario, 2017 \\
+        M.A., \university, 2024
+            
+        \vspace{3cm}
+        \large
+
+        A Dissertation Submitted in                           \\
+        Partial Fulfillment of the Requirements for           \\
+        the Degree of Doctor of Philosophy in the             \\
+        \department\ at \university
+            
+        \vspace{4.5cm}
+        
+        City, State or Province \\
+        Month YYYY
+            
+    \end{center}
+\end{titlepage}
+
+\newpage
+\pagenumbering{gobble}
+\begin{minipage}[b]{0.9\textwidth}\centering
+\vspace{0.45\textheight}
+\textcopyright{} Copyright 2024 \\
+by Author Name
+\end{minipage}
+
+\newpage
+\includepdf{signature_page/page.pdf}
+
+\doublespacing
+\pagenumbering{roman}
+\pagestyle{plain}
+\setcounter{page}{4}
+
+\chapter*{CURRICULUM VITAE}
+
+The author is originally from Rosario, Santa Fe, Argentina.
+He completed his undergraduate studies at the \textit{Universidad de Rosario},
+where he worked as a Research Assistant.
+Before starting his PhD, he worked in WORK EXPERIENCE.
+In 2018, he entered the PhD program in \department\ at \university.
+He is a football fan.
+
+\chapter*{ACKNOWLEDGEMENTS}
+
+I thank my family and friends for their support.
+
+I thank my colleagues for the discussions and feedback.
+
+I thank my committee for the invaluable guidance.
+
+\chapter*{PREFACE}
+
+The life of Lionel Messi embodies the pinnacle of footballing achievement. 
+His otherworldly talent captivated the world, shattering records while leading 
+FC Barcelona and the Argentina national team to countless victories.
+This dissertation delves into Messi's remarkable journey, providing a 
+comprehensive analysis of his extraordinary career.
+
+Beginning with his meteoric rise at Barcelona, this work examines Messi's 
+iconic goals, titles, and the transformative impact he had on the sport.
+It then explores his triumphs---and heartbreaks---with Argentina, culminating in 
+his ultimate conquest: winning the World Cup.
+Finally, the dissertation analyzes Messi's continued evolution on the pitch 
+at Paris Saint-Germain and the potential future role with Inter Miami.
+
+\setcounter{tocdepth}{1} % Set the depth of the table of contents
+
+\tableofcontents
+\listoftables
+\listoffigures
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\doublespacing
+
+%% CHAPTER ONE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+
+\setcounter{section}{0}% Reset section counter
+
+\chapter{The FC Barcelona years}
+
+\input{chapter_one/main}
+
+%%%% APPENDIX %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{\Large\centering{APPENDIX}}
+
+%% Change section numbering for appendix
+
+\setcounter{section}{0}% Reset appendix section counter
+\renewcommand{\thesection}{\arabic{chapter}.\Alph{section}}% Use letters for appendix section numbering
+
+\setcounter{table}{0}% Reset table counter
+\setcounter{figure}{0}% Reset figure counter
+
+\renewcommand{\thetable}{\arabic{chapter}.\Alph{table}}%
+\captionsetup{labelformat=simple}
+
+\renewcommand{\thefigure}{\arabic{chapter}.\Alph{figure}}%
+\captionsetup{labelformat=simple}
+
+\input{chapter_one/appendix}
+
+%% CHAPTER TWO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+
+\chapter{Skills}
+
+%% Update section numbering
+
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}} % Use letters for section numbering (undo previous appendix)
+
+\setcounter{table}{0}% Reset table counter
+\setcounter{figure}{0}% Reset figure counter
+
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}%
+\captionsetup{labelformat=simple}
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}%
+\captionsetup{labelformat=simple}
+
+% \input{chapter_two/main}
+
+%% CHAPTER THREE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+
+\chapter{Collective Bargaining Networks, Rent-sharing, 
+         and the Propagation of Shocks}
+
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}} % Use letters for section numbering (undo previous appendix)
+
+\setcounter{table}{0}% Reset table counter
+\setcounter{figure}{0}% Reset figure counter
+
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}%
+\captionsetup{labelformat=simple}
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}%
+\captionsetup{labelformat=simple}
+
+% \input{chapter_three/main}
+
+%% BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\printbibliography[title={BIBLIOGRAPHY}]
+
+\end{document}
