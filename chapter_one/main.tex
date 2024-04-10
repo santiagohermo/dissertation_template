@@ -74,9 +74,10 @@ Table \ref{tab:messi_barca_goals_assists} showcases Messi's remarkable
 goal and assist statistics, highlighting his immense contribution to the 
 team's success.
 
-Messi had a record-breaking calendar year in 2012, scoring 91 goals in all competitions.
-This peak performance is illustrated in Figure \ref{fig:messi_goals_xg_2012}, which
-shows the ratio of goals to expected goals (xG) for Messi and other players
+Messi had a record-breaking calendar year in 2012, scoring 91 goals in all 
+competitions.
+This peak performance is illustrated in Figure \ref{fig:messi_goals_xg_2012}, 
+which shows the ratio of goals to expected goals (xG) for Messi and other players
 in the 2012/13 season.
 Messi consistently outperformed his xG, demonstrating his exceptional finishing
 ability and efficiency in front of goal.
@@ -95,6 +96,27 @@ Messi's performances resulted in multiple awards and accolades.
 Appendix \ref{sec:ballon_dor} provides a summary of Messi's Ballon 
 d'Or awards, highlighting his dominance in world football during his time 
 at Barcelona.
+
+\subsection{Computing expected goals}
+
+Expected goals (xG) is a statistical metric that quantifies the quality of a
+goal-scoring opportunity.
+It is calculated based on various factors such as shot location, shot angle,
+and type of shot.
+
+The formula for calculating xG is as follows:
+\begin{equation}
+    xG = \sum_{i=1}^{n} P(G_i) \times G_i
+\end{equation}
+where $P(G_i)$ is the probability of scoring from a given shot $i$, and 
+$G_i$ is the number of goals scored from that shot.
+The shot location, shot angle, and type of shot are used to determine the
+probability of scoring from a given shot.
+
+By comparing a player's actual goals to their expected goals, analysts can
+assess the player's finishing ability and efficiency in front of goal.
+This metric provides valuable insights into a player's performance and can
+help coaches and analysts make data-driven decisions.
 
 \section{Messi's Departure from Barcelona}\label{sec:messi_departure}
 
