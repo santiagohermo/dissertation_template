@@ -1,7 +1,7 @@
 # Dissertation Template
 
 Welcome to the `dissertation_template` repository!
-This repository serves as a simple template to help you get organize 
+This repository serves as a simple template to help you organize 
 your research towards your dissertation.
 
 ## Dissertation
