@@ -216,7 +216,7 @@ at Paris Saint-Germain and the potential future role with Inter Miami.
 
 \input{chapter_one/main}
 
-%%%% APPENDIX %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% APPENDIX
 
 \section*{\Large\centering{APPENDIX}}
 
@@ -255,22 +255,62 @@ at Paris Saint-Germain and the potential future role with Inter Miami.
 
 \input{chapter_two/main}
 
-%% CHAPTER THREE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\clearpage
+%% APPENDIX
 
-\chapter{Another chapter title}
+\section*{\Large\centering{APPENDIX}}
 
-\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}} % Use letters for section numbering (undo previous appendix)
+%% Change section numbering for appendix
+
+\setcounter{section}{0}% Reset appendix section counter
+\renewcommand{\thesection}{\arabic{chapter}.\Alph{section}}% Use letters for appendix section numbering
 
 \setcounter{table}{0}% Reset table counter
 \setcounter{figure}{0}% Reset figure counter
 
-\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}%
-\captionsetup{labelformat=simple}
-\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}%
+\renewcommand{\thetable}{\arabic{chapter}.\Alph{table}}%
 \captionsetup{labelformat=simple}
 
+\renewcommand{\thefigure}{\arabic{chapter}.\Alph{figure}}%
+\captionsetup{labelformat=simple}
+
+\input{chapter_two/appendix}
+
+%% CHAPTER THREE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \clearpage
+
+% \chapter{Another chapter title}
+
+% \renewcommand{\thesection}{\arabic{chapter}.\arabic{section}} % Use letters for section numbering (undo previous appendix)
+
+% \setcounter{table}{0}% Reset table counter
+% \setcounter{figure}{0}% Reset figure counter
+
+% \renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}%
+% \captionsetup{labelformat=simple}
+% \renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}%
+% \captionsetup{labelformat=simple}
+
 % \input{chapter_three/main}
+
+% %% APPENDIX
+
+% \section*{\Large\centering{APPENDIX}}
+
+% %% Change section numbering for appendix
+
+% \setcounter{section}{0}% Reset appendix section counter
+% \renewcommand{\thesection}{\arabic{chapter}.\Alph{section}}% Use letters for appendix section numbering
+
+% \setcounter{table}{0}% Reset table counter
+% \setcounter{figure}{0}% Reset figure counter
+
+% \renewcommand{\thetable}{\arabic{chapter}.\Alph{table}}%
+% \captionsetup{labelformat=simple}
+
+% \renewcommand{\thefigure}{\arabic{chapter}.\Alph{figure}}%
+% \captionsetup{labelformat=simple}
+
+% \input{chapter_three/appendix}
 
 %% BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
