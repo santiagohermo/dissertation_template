@@ -24,7 +24,7 @@ subsections, and equations.
 You can of course use any other Latex commands to customize 
 your dissertation.
 
-To change your name and university, customize the commands in lines 109-110 of the `dissertation.tex` file.
+To change your affiliation customize the commands in lines 109-110 of the `dissertation.tex` file.
 
 ```tex
 %% University details
@@ -32,7 +32,7 @@ To change your name and university, customize the commands in lines 109-110 of t
 \newcommand{\department}{Department of Something}
 ```
 
-You also need to update the title, curriculum, and so on, in `dissertation.tex`.
+You also need to update your name, the title, curriculum, and so on, in `dissertation.tex`.
 
 The dissertation includes two chapters in the [`chapter_one`](chapter_one) and [`chapter_two`](chapter_two) folders.
 Change the files in these folders to add your own content.
