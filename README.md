@@ -21,11 +21,10 @@ The template is also available in Overleaf at the following link: [Dissertation 
 
 This repository demonstrates how to use Latex figures, tables, sections, 
 subsections, and equations.
-You can use of course use any other Latex commands to customize 
+You can of course use any other Latex commands to customize 
 your dissertation.
 
-You can customize the commands in lines 109-110 of the `dissertation.tex` file
-with your name and university.
+To change your name and university, customize the commands in lines 109-110 of the `dissertation.tex` file.
 
 ```tex
 %% University details
@@ -33,7 +32,7 @@ with your name and university.
 \newcommand{\department}{Department of Something}
 ```
 
-You also need to update title, curriculum, and so on.
+You also need to update the title, curriculum, and so on, in `dissertation.tex`.
 
 The dissertation includes two chapters in the [`chapter_one`](chapter_one) and [`chapter_two`](chapter_two) folders.
 Change the files in these folders to add your own content.
