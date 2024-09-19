@@ -3,6 +3,9 @@
 Welcome to the `dissertation_template` repository!
 This repository serves as a simple template to help you organize 
 your research towards your dissertation.
+It was adapted from an informal template that was used by many graduate 
+students at the Brown University's Department of Economics.
+I have added some features and made it publicly available for anyone to use.
 
 ## Dissertation
 

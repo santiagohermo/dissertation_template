@@ -85,10 +85,10 @@
 
 \graphicspath{{chapter_one/}{chapter_one/}{chapter_three/}}
 
-\renewcommand{\contentsname}{TABLE OF CONTENTS}
-\renewcommand{\listfigurename}{LIST OF FIGURES}
-\renewcommand{\listtablename}{LIST OF TABLES}
-\renewcommand{\chaptername}{CHAPTER}
+\renewcommand{\contentsname}{Table of Contents}
+\renewcommand{\listfigurename}{List of Figures}
+\renewcommand{\listtablename}{List of Tables}
+\renewcommand{\chaptername}{Chapter}
 
 % Common Math-related commands
 %% More commands in main.tex for each chapter
@@ -165,7 +165,7 @@ by Author Name
 \pagestyle{plain}
 \setcounter{page}{4}
 
-\chapter*{CURRICULUM VITAE}
+\chapter*{Vita}
 
 The author is originally from Rosario, Santa Fe, Argentina.
 He completed his undergraduate studies at the \textit{Universidad de Rosario},
@@ -174,7 +174,7 @@ Before starting his PhD, he worked in WORK EXPERIENCE.
 In 2018, he entered the PhD program in \department\ at \university.
 He is a football fan.
 
-\chapter*{ACKNOWLEDGEMENTS}
+\chapter*{Acknowledgments}
 
 I thank my family and friends for their support.
 
@@ -182,7 +182,7 @@ I thank my colleagues for the discussions and feedback.
 
 I thank my committee for the invaluable guidance.
 
-\chapter*{PREFACE}
+\chapter*{Preface}
 
 The life of Lionel Messi embodies the pinnacle of footballing achievement. 
 His otherworldly talent captivated the world, shattering records while leading 
@@ -190,12 +190,11 @@ FC Barcelona and the Argentina national team to countless victories.
 This dissertation delves into Messi's remarkable journey, providing a 
 comprehensive analysis of his extraordinary career.
 
-Beginning with his meteoric rise at Barcelona, this work examines Messi's 
-iconic goals, titles, and the transformative impact he had on the sport.
-It then explores his triumphs---and heartbreaks---with Argentina, culminating in 
-his ultimate conquest: winning the World Cup.
-Finally, the dissertation analyzes Messi's continued evolution on the pitch 
-at Paris Saint-Germain and the potential future role with Inter Miami.
+Beginning with his meteoric rise at Barcelona, Chapter \ref{chap:chapter_1} 
+examines Messi's iconic goals, titles, and the transformative impact he had 
+on the sport.
+Then, Chapter \ref{chap:chapter_2} explores his triumphs---and heartbreaks---with 
+Argentina, culminating in his ultimate conquest: winning the World Cup.
 
 \setcounter{tocdepth}{1} % Set the depth of the table of contents
 
@@ -213,18 +212,22 @@ at Paris Saint-Germain and the potential future role with Inter Miami.
 
 \setcounter{section}{0}% Reset section counter
 
-\chapter{The FC Barcelona years}
+\chapter{The FC Barcelona Years}
+\label{chap:chapter_1}
 
 \input{chapter_one/main}
 
 %% APPENDIX
 
-\section*{\Large\centering{APPENDIX}}
+\clearpage
+\chapter*{Appendix for Chapter \ref{chap:chapter_1}}
 
 %% Change section numbering for appendix
 
 \setcounter{section}{0}% Reset appendix section counter
-\renewcommand{\thesection}{\arabic{chapter}.\Alph{section}}% Use letters for appendix section numbering
+\renewcommand{\thesection}{\arabic{chapter}.\Alph{section}}% Letters for appendix section numbering
+\renewcommand{\theHsection}{ch1.\Alph{section}}% Section hyperlink
+% Logic here follows explanation in https://tex.stackexchange.com/a/71174
 
 \setcounter{table}{0}% Reset table counter
 \setcounter{figure}{0}% Reset figure counter
@@ -241,6 +244,7 @@ at Paris Saint-Germain and the potential future role with Inter Miami.
 \clearpage
 
 \chapter{Messi's International Journey}
+\label{chap:chapter_2}
 
 %% Update section numbering
 
@@ -258,12 +262,15 @@ at Paris Saint-Germain and the potential future role with Inter Miami.
 
 %% APPENDIX
 
-\section*{\Large\centering{APPENDIX}}
+\clearpage
+\chapter*{Appendix for Chapter \ref{chap:chapter_2}}
 
 %% Change section numbering for appendix
 
 \setcounter{section}{0}% Reset appendix section counter
-\renewcommand{\thesection}{\arabic{chapter}.\Alph{section}}% Use letters for appendix section numbering
+\renewcommand{\thesection}{\arabic{chapter}.\Alph{section}}% Letters for appendix section numbering
+\renewcommand{\theHsection}{ch2.\Alph{section}}% Section hyperlink
+% Logic here follows explanation in https://tex.stackexchange.com/a/71174
 
 \setcounter{table}{0}% Reset table counter
 \setcounter{figure}{0}% Reset figure counter
